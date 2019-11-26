@@ -1,0 +1,49 @@
+
+
+----- DECISION TREE -----  
+
+
+              precision    recall  f1-score   support
+
+           0       0.95      0.91      0.93        68
+           1       0.83      0.91      0.87        32
+
+    accuracy                           0.91       100
+   macro avg       0.89      0.91      0.90       100
+weighted avg       0.91      0.91      0.91       100
+('Decision tree Accuracy :', 0.91)
+ DECISION TREE SUCCESSFULLY COMPLETED
+
+
+
+
+
+----- SVM -----
+              precision    recall  f1-score   support
+
+           0       0.89      0.97      0.93        68
+           1       0.92      0.75      0.83        32
+
+    accuracy                           0.90       100
+   macro avg       0.91      0.86      0.88       100
+weighted avg       0.90      0.90      0.90       100
+('SVM Accuracy :', 0.9)
+ SVM SUCCESSFULLY COMPLETED
+
+
+
+
+
+----- RANDOMFOREST ----- 
+              precision    recall  f1-score   support
+
+           0       0.95      0.93      0.94        68
+           1       0.85      0.91      0.88        32
+
+    accuracy                           0.92       100
+   macro avg       0.90      0.92      0.91       100
+weighted avg       0.92      0.92      0.92       100
+('RANDOM FOREST Accuracy :', 0.92)
+ RANDOMFOREST SUCCESSFULLY COMPLETED
+
+CLASSIFICATION DONE
