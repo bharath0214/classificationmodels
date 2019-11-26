@@ -1,0 +1,116 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+  /* width */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+ 
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+  </style>
+
+    <title>Train | Test | Predict</title>
+
+    <meta name="description" content="Source code generated using layoutit.com">
+    <meta name="author" content="LayoutIt!">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+  </head>
+  <body style="background-image:url('{% static '/assets/images/images.jpg' %}');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;">
+
+  <div class="container-fluid">
+	<div class="row">
+
+    <div class="mbr-table-cell">
+
+                    <div class="navbar-brand">
+                        <a href="" class="etl-icon icon-desktop mbr-iconfont mbr-iconfont-menu navbar-logo"></a>
+                        <a class="navbar-caption" href="">TRAIN | TEST | PREDICT&nbsp;</a>
+                    </div>
+
+                </div>
+                <div class="mbr-table-cell">
+
+                    <button class="navbar-toggler pull-xs-right hidden-md-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
+                        <div class="hamburger-icon"></div>
+                    </button>
+
+                    <ul class="nav-dropdown collapse pull-xs-right nav navbar-nav navbar-toggleable-sm" id="exCollapsingNavbar">
+                        <li class="nav-item nav-btn"><a class="nav-link btn btn-white btn-white-outline" href="/">DASHBOARD</a>
+                        </li><li class="nav-item nav-btn"><a class="nav-link btn btn-white btn-white-outline" href="/#msg-box8-3">HOW TO START</a></li>
+                        <li class="nav-item nav-btn"><a class="nav-link btn btn-white btn-white-outline" href="/#submitfiles">START ML</a></li>
+                        <li class="nav-item nav-btn"><a class="nav-link btn btn-white btn-white-outline" href="/#contacts4-6">CONTACT</a></li>
+                    </ul>
+                    <button hidden="" class="navbar-toggler navbar-close" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
+                        <div class="close-icon"></div>
+                    </button>
+
+                </div>
+
+
+
+		<div class="col-md-12" id="header1-1" data-rv-view="2" style="width:80%;margin: auto;border: 3px solid #fff;">
+
+       {% block content %}
+
+  <br/>
+  <center>
+      <h3>---Model Building Progress---</h3>
+  </center>
+
+     {{ file | linebreaks }}
+
+        
+
+       {% endblock %}
+
+
+
+		</div>
+
+	</div>
+	<div class="row">
+		<div class="col-md-4">
+
+
+		</div>
+		<div class="col-md-4">
+
+
+		</div>
+		<div class="col-md-4">
+
+
+		</div>
+	</div>
+</div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

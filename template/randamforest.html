@@ -1,0 +1,50 @@
+{% extends "header.html" %}
+
+{% block content %}
+
+{% load static %}
+
+{% static "images" as baseUrl %}
+
+
+<section class="mbr-section mbr-section-hero mbr-section-full mbr-section-with-arrow mbr-parallax-background mbr-after-navbar" id="header1-1" data-rv-view="2" style="background-image: url({% static 'assets/images/images.jpg' %});">
+
+<form class="form-horizontal" action="" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+<fieldset>
+
+<center>
+<!-- Form Name -->
+<br/><br/><br/><br/><br/>
+<legend>START BUILDING MACHINE LEARNING RANDOM FOREST MODELS</legend><br/><br/><br/>
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="emailid">EMAIL ID :</label>
+  <div class="col-md-4">
+  <input id="emailid" name="emailid" placeholder="8615208@apiit.edu.in" class="form-control input-md" required="required" value="{{ emailid }}" type="text">
+
+  </div>
+</div>
+<br/><br/><br/><BR>
+<!-- File Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="csv_file">Train File Upload :</label>
+  <div class="col-md-4">
+    <input id="csv_file" name="csv_file" value="{{ csv_file }}" class="input-file" accept=".csv" type="file">
+  </div>
+</div>
+<br/><br/><br/><br/>
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="submit"></label>
+  <div class="col-md-4">
+    <button id="submit" name="submit" class="btn btn-primary">Upload &amp; Submit</button>
+  </div>
+</div>
+</center>
+</fieldset>
+</form>
+</section>
+
+{% endblock %}
+
